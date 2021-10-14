@@ -48,11 +48,7 @@ try:
     '範囲を指定してください',
     0.0,3500.0,(0.0,3500.0)
     )
-        st.sidebar.write(
-        """
-        ## ソースコード→https://github.com/shota16111/streamlitjausastock
-        """
-    )
+
 
     tickers = {
         'honda':'HMC',
@@ -94,7 +90,11 @@ try:
             )
         )
         st.altair_chart(chart, use_container_width=True)
-        
+                st.sidebar.write(
+        """
+        ## ソースコード→https://github.com/shota16111/streamlitjausastock
+        """
+    )
        
 
 
