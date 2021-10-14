@@ -3,10 +3,11 @@ import yfinance as yf
 import altair as alt
 import streamlit as st
 
-st.title('米国と日本の株値可視化アプリ')
+st.title('日本と米国の株価可視化アプリ')
 
 st.sidebar.write("""
 # いろいろな株価
+##加えてほしい企業があれば加えられますよ！(笑)
 こちらは株価可視化アプリツールです。以下のオプションから表示日数を指定
 """
 )
@@ -18,7 +19,7 @@ days = st.sidebar.slider('日数',1,50,20)
 
 st.write(
     f"""
-    ### 過去 **{days}日間** のGAFAの株価
+    ### 過去 **{days}日間** の企業の株価
     """
 )
 
