@@ -89,5 +89,9 @@ try:
             )
         )
         st.altair_chart(chart, use_container_width=True)
+        
+        ""
+        コード→（https://github.com/shota16111/streamlitjausastock）
+        ""
 except:
     st.error("おっとエラーが起きているようです。")
