@@ -90,8 +90,8 @@ try:
         )
         st.altair_chart(chart, use_container_width=True)
         
-        st.sidebar.write("""
-## https://github.com/shota16111
+        st.write("""
+## https://github.com/shota16111/streamlitjausastock
 """
 )
 
