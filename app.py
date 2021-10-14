@@ -89,7 +89,12 @@ try:
             )
         )
         st.altair_chart(chart, use_container_width=True)
-### https://github.com/shota16111
+        
+        st.sidebar.write("""
+## https://github.com/shota16111
+"""
+)
+
 
        
      
