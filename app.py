@@ -48,19 +48,24 @@ try:
     )
 
     tickers = {
+        'honda':'HMC',
+        'toyota':'TM',
+        'sony':'SONY',
+        'Keyence Corporation':'KYCCF',
+        'Recruit Holdings':'6098.T',
+        'amazon':'AMZN',
         'apple':'AAPL',
         'facebook':'FB',
         'google':'GOOGL',
         'microsoft':'MSFT',
         'netflix':'NFLX',
-        'amazon':'AMZN'
 
     }
     df =get_data(days, tickers)
     companies =st.multiselect(
         '会社名を選択してください',
         list(df.index),
-        ['google','amazon','facebook','apple']
+        ['sony','amazon','toyota','honda']
     )
     if not  companies:
         st.error('少なくとも一社は選んでください。') 
