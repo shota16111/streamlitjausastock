@@ -90,10 +90,8 @@ try:
         )
         st.altair_chart(chart, use_container_width=True)
         
-        st.write("""
-## https://github.com/shota16111/streamlitjausastock
-"""
-)
+       ' ソースコード→https://github.com/shota16111/streamlitjausastock'
+
 
 
        
