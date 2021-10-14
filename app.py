@@ -90,11 +90,12 @@ try:
             )
         )
         st.altair_chart(chart, use_container_width=True)
-                st.sidebar.write(
+        
+        st.sidebar.write(
         """
         ## ソースコード→https://github.com/shota16111/streamlitjausastock
         """
-    )
+        )
        
 
 
