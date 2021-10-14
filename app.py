@@ -89,7 +89,8 @@ try:
             )
         )
         st.altair_chart(chart, use_container_width=True)
-        st.title('  コード→（https://github.com/shota16111/streamlitjausastock）')
+### https://github.com/shota16111
+
        
      
        
