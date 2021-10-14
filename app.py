@@ -3,7 +3,7 @@ import yfinance as yf
 import altair as alt
 import streamlit as st
 
-st.title('日本と米国の株価可視化アプリ')
+st.title('日本と米国の株価可視化アプリ.会社名いじればエラー直ります。多分')
 
 st.sidebar.write("""
 # いろいろな株価
