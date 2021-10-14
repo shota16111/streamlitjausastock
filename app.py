@@ -3,7 +3,8 @@ import yfinance as yf
 import altair as alt
 import streamlit as st
 
-st.title('日本と米国の株価可視化アプリ　会社名いじればエラー直ります。多分')
+st.title('日本と米国の株価可視化アプリ')
+st.title('会社名いじればエラー直ります。多分')
 
 st.sidebar.write("""
 # いろいろな株価
@@ -75,7 +76,7 @@ try:
         st.write("### 株価（USD）",data.sort_index())
         data=data.T.reset_index()
         data=pd.melt(data,id_vars=['Date']).rename(
-            columns={'value':'Stock Prices(USD)'}
+            columns={'value':'Stock Prices(USD'}
         )
 
         chart = (
