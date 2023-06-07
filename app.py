@@ -3,7 +3,7 @@ import yfinance as yf
 import altair as alt
 import streamlit as st
 
-st.title('日本と米国のaaaaaaaaaaaaaaaaaaaaa株価可視化アプリ')
+st.title('日本と米国の株価可視化アプリ')
 st.title('会社名いじればエラー直ります')
 
 st.sidebar.write("""
@@ -51,6 +51,11 @@ try:
 
 
     tickers = {
+        'honda':'HMC',
+        'toyota':'TM',
+        'sony':'SONY',
+        'Keyence Corporation':'KYCCF',
+        'Recruit Holdings':'6098.T',
         'amazon':'AMZN',
         'apple':'AAPL',
         'facebook':'FB',
@@ -63,7 +68,7 @@ try:
     companies =st.multiselect(
         '会社名を選択してください',
         list(df.index),
-        ['sony','amazon','toyota','honda']
+        ['netflix','microsoft','Recruit','google']
     )
     if not  companies:
         st.error('少なくとも一社は選んでください。') 
