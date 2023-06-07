@@ -51,11 +51,11 @@ try:
 
 
     tickers = {
-        'honda':'HMC',
-        'toyota':'TM',
-        'sony':'SONY',
-        'Keyence Corporation':'KYCCF',
-        'Recruit Holdings':'6098.T',
+#         'honda':'HMC',
+#         'toyota':'TM',
+#         'sony':'SONY',
+#         'Keyence Corporation':'KYCCF',
+#         'Recruit Holdings':'6098.T',
         'amazon':'AMZN',
         'apple':'AAPL',
         'facebook':'FB',
@@ -68,7 +68,7 @@ try:
     companies =st.multiselect(
         '会社名を選択してください',
         list(df.index),
-        ['netflix','microsoft','Recruit','google']
+        ['netflix','microsoft','amazon','google']
     )
     if not  companies:
         st.error('少なくとも一社は選んでください。') 
