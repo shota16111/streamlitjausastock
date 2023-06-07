@@ -51,11 +51,6 @@ try:
 
 
     tickers = {
-        'honda':'HMC',
-        'toyota':'TM',
-        'sony':'SONY',
-        'Keyence Corporation':'KYCCF',
-        'Recruit Holdings':'6098.T',
         'amazon':'AMZN',
         'apple':'AAPL',
         'facebook':'FB',
