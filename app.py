@@ -1,4 +1,4 @@
-import pandas as pd
+pandas as pd
 import yfinance as yf
 import altair as alt
 import streamlit as st
@@ -38,7 +38,7 @@ def get_data(days, tickers):
         df =  pd.concat([df, hist])
     return df
 
-
+try:
     st.sidebar.write(
         """
         ## 株価の範囲指定
@@ -95,4 +95,5 @@ def get_data(days, tickers):
         ## ソースコード→https://github.com/shota16111/streamlitjausastock
         """
         )  
-
+except:
+    st.error("エラーが起きているようです。")
