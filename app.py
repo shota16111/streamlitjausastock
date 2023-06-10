@@ -57,7 +57,6 @@ try:
         'Recruit Holdings':'6098.T',
         'amazon':'AMZN',
         'apple':'AAPL',
-        'facebook':'FB',
         'google':'GOOGL',
         'microsoft':'MSFT',
         'netflix':'NFLX',
