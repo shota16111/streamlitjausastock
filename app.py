@@ -60,6 +60,7 @@ try:
         'google':'GOOGL',
         'microsoft':'MSFT',
         'netflix':'NFLX',
+        'KDDI Corporation' :'9433.T'
 
     }
     df =get_data(days, tickers)
