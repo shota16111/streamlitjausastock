@@ -4,7 +4,7 @@ import altair as alt
 import streamlit as st
 
 st.title('日本と米国の株価可視化アプリ')
-st.title('会社名いじればエラー直ります')
+
 
 st.sidebar.write("""
 # いろいろな株価
@@ -54,7 +54,6 @@ try:
         'honda':'HMC',
         'toyota':'TM',
         'sony':'SONY',
-        'Keyence Corporation':'KYCCF',
         'Recruit Holdings':'6098.T',
         'amazon':'AMZN',
         'apple':'AAPL',
@@ -95,13 +94,6 @@ try:
         """
         ## ソースコード→https://github.com/shota16111/streamlitjausastock
         """
-        )
-       
-
-
-
-       
-     
-       
+        )  
 except:
     st.error("エラーが起きているようです。")
