@@ -51,10 +51,15 @@ try:
 
 
     tickers = {
+        'microsoft':'MSFT',
+        'netflix':'NFLX',
         'honda':'HMC',
         'toyota':'TM',
         'sony':'SONY',
+        'Recruit Holdings':'6098.T',
         'amazon':'AMZN',
+        'apple':'AAPL',
+        'google':'GOOG',
 
     }
     df =get_data(days, tickers)
