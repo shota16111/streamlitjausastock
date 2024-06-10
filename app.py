@@ -36,7 +36,7 @@ def get_data(days, tickers):
         hist =hist.T
         hist.index.name = 'Name'
         df =  pd.concat([df, hist])
-return df
+    return df
 
 try:
     st.sidebar.write(
@@ -64,7 +64,7 @@ try:
     companies =st.multiselect(
         '会社名を選択してください',
         list(df.index),
-        ['sony','toyota','honda','apple']
+        ['netflix','microsoft','amazon','google']
     )
     if not  companies:
         st.error('少なくとも一社は選んでください。') 
