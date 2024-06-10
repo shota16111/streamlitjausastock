@@ -51,8 +51,9 @@ try:
 
 
     tickers = {
-        'honda':'HMC',
-        'toyota':'TM',
+        
+        'microsoft':'MSFT',
+        'netflix':'NFLX',
 
 
     }
