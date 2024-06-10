@@ -58,13 +58,12 @@ try:
     'sony':'SONY',
     'amazon':'AMZN',
     'apple':'AAPL',
-    'google':'GOOG',
     }
     df =get_data(days, tickers)
     companies =st.multiselect(
         '会社名を選択してください',
         list(df.index),
-        ['netflix','microsoft','amazon','google']
+        ['netflix','microsoft','amazon']
     )
     if not  companies:
         st.error('少なくとも一社は選んでください。') 
