@@ -53,8 +53,12 @@ try:
     tickers = {
         'microsoft':'MSFT',
         'netflix':'NFLX',
+        'honda':'HMC',
+        'toyota':'TM',
+        'sony':'SONY',
         'amazon':'AMZN',
-        'google':'GOOG',
+        'apple':'AAPL',
+        'google':'GOOG'
     }
     df =get_data(days, tickers)
     companies =st.multiselect(
