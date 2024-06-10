@@ -64,7 +64,7 @@ try:
     companies =st.multiselect(
         '会社名を選択してください',
         list(df.index),
-        ['netflix','microsoft','amazon','google']
+        ['sony','toyota','honda','apple']
     )
     if not  companies:
         st.error('少なくとも一社は選んでください。') 
