@@ -38,7 +38,7 @@ def get_data(days, tickers):
         df =  pd.concat([df, hist])
     return df
 
-
+try:
     st.sidebar.write(
         """
         ## 株価の範囲指定
@@ -49,7 +49,7 @@ def get_data(days, tickers):
     0.0, 3500.0, (0.0, 3500.0)
     )
 
-try:
+
     tickers = {
         'microsoft':'MSFT',
         'netflix':'NFLX',
