@@ -19,7 +19,7 @@ st.write(f"""
     ### 過去 **{days}日間** の企業の株価
 """)
 
-@st.cache_data
+@st.cache
 def get_data(days, tickers):
     df = pd.DataFrame()
     for company in tickers.keys():
